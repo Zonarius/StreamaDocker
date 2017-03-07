@@ -1,0 +1,10 @@
+streama:
+  build: .
+  ports:
+    - 127.0.0.1:8085:8080
+  volumes:
+    - /var/data/Anime:/data/ext/Anime
+    - /var/data/torrents:/data/ext/torrents
+    - ./volumes/data:/home/data
+    - ./volumes/uploads:/data/streama
+  restart: always
